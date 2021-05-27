@@ -1,0 +1,66 @@
+const config = {
+bucketName: process.env.REACT_APP_BUCKET_NAME,
+dirName: process.env.REACT_APP_DIR_NAME /* optional */,
+region: process.env.REACT_APP_REGION,
+accessKeyId: process.env.REACT_APP_ACCESS_ID,
+secretAccessKey: process.env.REACT_APP_ACCESS_KEY,
+};
+
+https://medium.com/@steven_creates/uploading-files-to-s3-using-react-js-hooks-react-aws-s3-c4c0684f38b3
+
+https://www.npmjs.com/package/react-aws-s3
+
+https://github.com/StevenCreates/react-file-aws/tree/master/src
+
+https://medium.com/@rachid1982fsb/upload-images-on-a-react-app-to-aws-s3-bucket-3f3114a683f1
+
+https://docs.aws.amazon.com/redshift/latest/dg/tutorial-loading-data-upload-files.html
+
+https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-photo-album.html
+
+
+Private key 
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
+
+myawsuploadproject
+
+Key pairs (1)
+	Name			Fingerprint							ID
+	
+	
+	myawsuploadproject	8e:2f:1a:b6:73:11:e9:82:ca:86:48:6b:dc:8d:eb:94:98:ce:ef:d4	key-00fda004826c412d0
+	
+Security Group Name
+
+Upload_SG_ap-south-1
+
+Step 1: Launch an instance
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html
+
+Connect to an instance
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html#connection-prereqs-get-info-about-instance
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html
+
+ssh -i /home/jayasriramachandran/Downloads/myawsuploadproject.pem ec2-user@ec2-13-127-213-84.ap-south-1.compute.amazonaws.com
+
+
+jayasriramachandran@aspire2108:~/react-fileupload-aws$ ssh -i /home/jayasriramachandran/Downloads/myawsuploadproject.pem ec2-user@ec2-13-127-213-84.ap-south-1.compute.amazonaws.com
+The authenticity of host 'ec2-13-127-213-84.ap-south-1.compute.amazonaws.com (13.127.213.84)' can't be established.
+ECDSA key fingerprint is SHA256:3sliUsOPHOSmWOSLIaSjy6YHnCwTbCHzqH/3Xhk9ClA.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'ec2-13-127-213-84.ap-south-1.compute.amazonaws.com,13.127.213.84' (ECDSA) to the list of known hosts.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0664 for '/home/jayasriramachandran/Downloads/myawsuploadproject.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/jayasriramachandran/Downloads/myawsuploadproject.pem": bad permissions
+ec2-user@ec2-13-127-213-84.ap-south-1.compute.amazonaws.com: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+
+	
+	
